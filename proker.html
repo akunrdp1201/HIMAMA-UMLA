@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kerja - HIMAMA UMLA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Montserrat', sans-serif; }
+        .bg-hero-grad { background: linear-gradient(135deg, #091534 0%, #102a6b 45%, #1d4ed8 80%, #0284c7 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Navbar & Mobile Hamburger Menu -->
+    <nav class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="img/logo-himama.png" alt="Logo HIMAMA UMLA" class="w-11 h-11 object-contain drop-shadow-md">
+                <div>
+                    <span class="font-heading font-extrabold text-lg text-white block leading-none tracking-tight">HIMAMA UMLA</span>
+                    <span class="text-[11px] text-cyan-400 font-semibold tracking-widest uppercase">Kabinet Sinergi</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-cyan-300 transition">Beranda</a>
+                <a href="tentang.html" class="hover:text-cyan-300 transition">Tentang</a>
+                <a href="divisi.html" class="hover:text-cyan-300 transition">Divisi</a>
+                <a href="proker.html" class="text-white font-semibold border-b-2 border-cyan-400 pb-1">Proker</a>
+                <a href="kontak.html" class="hover:text-cyan-300 transition">Kontak</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="kontak.html" class="hidden sm:inline-flex bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-95 text-white px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm shadow-lg shadow-blue-600/30 transition">
+                    Gabung Anggota
+                </a>
+                <button id="menu-btn" class="lg:hidden w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center focus:outline-none">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950/95 border-b border-white/10 px-6 py-6 space-y-4">
+            <a href="index.html" class="block text-slate-300 hover:text-cyan-400 py-2 border-b border-white/5">Beranda</a>
+            <a href="tentang.html" class="block text-slate-300 hover:text-cyan-400 py-2 border-b border-white/5">Tentang</a>
+            <a href="divisi.html" class="block text-slate-300 hover:text-cyan-400 py-2 border-b border-white/5">Divisi</a>
+            <a href="proker.html" class="block text-white font-semibold py-2 border-b border-white/5">Proker</a>
+            <a href="kontak.html" class="block text-slate-300 hover:text-cyan-400 py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+
+    <!-- Header Banner Proker -->
+    <section class="relative bg-hero-grad text-white pt-36 pb-20 lg:pt-44 lg:pb-24 text-center overflow-hidden">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-15">
+            <span class="bg-white/10 text-cyan-300 border border-white/15 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">Agenda Kegiatan</span>
+            <h1 class="font-heading text-4xl sm:text-5xl font-black mt-4 mb-4">Program Kerja <span class="text-cyan-400">HIMAMA UMLA</span></h1>
+            <p class="text-blue-100/90 text-base sm:text-lg">Daftar agenda dan aksi nyata dari kelima divisi strategis untuk pengembangan mahasiswa manajemen.</p>
+        </div>
+    </section>
+    <!-- Daftar Proker Berdasarkan Divisi -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- 1. Pengabdian Masyarakat -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Divisi Pengabdian Masyarakat</h3>
+                    <p class="text-xs text-slate-500">Aksi nyata kepedulian sosial untuk masyarakat</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Agenda Unggulan</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">HIMAMA Mengabdi (Bakti Sosial)</h4>
+                    <p class="text-slate-600 text-sm">Program penyuluhan UMKM desa dan pembagian santunan kepada warga sekitar kampus.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Agenda Rutin</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Aksi Tanggap Bencana & Peduli</h4>
+                    <p class="text-slate-600 text-sm">Penggalangan dana dan donasi cepat tanggap untuk membantu korban musibah bencana alam.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Sumber Daya Manusia -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-600 text-white flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Divisi Sumber Daya Manusia (SDM)</h3>
+                    <p class="text-xs text-slate-500">Kaderisasi dan penguatan internal organisasi</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full">Agenda Unggulan</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Management Camp & Makrab</h4>
+                    <p class="text-slate-600 text-sm">Kegiatan kebersamaan untuk mempererat kekeluargaan dan melatih kepemimpinan anggota baru.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full">Agenda Rutin</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Upgrading & Evaluasi Pengurus</h4>
+                    <p class="text-slate-600 text-sm">Sesi pelatihan internal berkala dan evaluasi kinerja pengurus demi menjaga keharmonisan organisasi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Minat dan Bakat -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-blue-700 text-white flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Divisi Minat dan Bakat</h3>
+                    <p class="text-xs text-slate-500">Penyaluran potensi seni, olahraga, dan kompetisi</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">Agenda Unggulan</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Management Cup (Sport & Art Competition)</h4>
+                    <p class="text-slate-600 text-sm">Ajang kompetisi olahraga dan seni antar mahasiswa manajemen untuk memupuk sportivitas.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">Agenda Rutin</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Club & Sparring Mahasiswa</h4>
+                    <p class="text-slate-600 text-sm">Wadah latihan rutin mingguan untuk menyalurkan hobi di bidang olahraga maupun seni.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Kewirausahaan -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Divisi Kewirausahaan</h3>
+                    <p class="text-xs text-slate-500">Inkubasi bisnis dan kemandirian finansial</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-sky-600 bg-sky-50 px-2.5 py-1 rounded-full">Agenda Unggulan</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">UMLA Business Plan Expo</h4>
+                    <p class="text-slate-600 text-sm">Pameran dan kompetisi rancangan ide bisnis kreatif hasil karya mahasiswa manajemen.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-sky-600 bg-sky-50 px-2.5 py-1 rounded-full">Agenda Rutin</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Merchandise & Unit Usaha HIMAMA</h4>
+                    <p class="text-slate-600 text-sm">Pengelolaan produk atribut organisasi dan bazar kewirausahaan guna mendukung kas mandiri.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Komunikasi dan Informasi -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
+            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Divisi Komunikasi dan Informasi</h3>
+                    <p class="text-xs text-slate-500">Pengelolaan media, publikasi, dan dokumentasi</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">Agenda Unggulan</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Content Creator Camp & Pelatihan Desain</h4>
+                    <p class="text-slate-600 text-sm">Pelatihan pembuatan konten kreatif, videografi, dan desain grafis menggunakan Canva/Figma untuk pengurus.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">Agenda Rutin</span>
+                    <h4 class="font-bold text-base text-slate-900 mt-2 mb-1">Pengelolaan Media Sosial & Publikasi</h4>
+                    <p class="text-slate-600 text-sm">Update rutin feeds Instagram, TikTok, dan penyebaran informasi kegiatan proker secara aktif.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Full-Bleed -->
+    <footer class="w-full bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white pt-20 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-heading font-black text-lg text-white">H</div>
+                    <span class="font-heading font-extrabold text-xl text-white">HIMAMA UMLA</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm">
+                    Himpunan Mahasiswa Manajemen Universitas Muhammadiyah Lamongan. Berintegritas, Inovatif, dan Berdaya Saing.
+                </p>
+                <div class="flex gap-3">
+                    <a href="https://www.instagram.com/himama_umla?obrf=MWpqcWdwYXp1N2t6OQ==" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-500 flex items-center justify-center text-white transition shadow-sm"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@himama.umla?_r=1&_t=ZS-9BLjS8X6IE9" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-500 flex items-center justify-center text-white transition shadow-sm"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-cyan-400 mb-4">Navigasi Website</h4>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:text-cyan-400 transition">Tentang Kami</a></li>
+                    <li><a href="divisi.html" class="hover:text-cyan-400 transition">Divisi Organisasi</a></li>
+                    <li><a href="proker.html" class="hover:text-cyan-400 transition">Program Kerja</a></li>
+                    <li><a href="kontak.html" class="hover:text-cyan-400 transition">Kontak & Aspirasi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-cyan-400 mb-4">Lokasi Kampus</h4>
+                <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                    Universitas Muhammadiyah Lamongan (UMLA)<br>
+                    Jl. Raya Plalangan Plosowahyu KM 02, Lamongan, Jawa Timur
+                </p>
+                <p class="text-sm text-cyan-300"><i class="fa-solid fa-envelope mr-2"></i> himamaumla25@gmail.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 pt-8">
+            &copy; 2026 HIMAMA UMLA. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
